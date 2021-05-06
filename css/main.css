@@ -102,6 +102,30 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.body {
+  background-color: var(--white);
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+
+
 /***********************************BTN*********************************/
 .btn__orange {
   color: var(--white) !important;
@@ -112,12 +136,25 @@ textarea {
   font-size: 12px;
 }
 
+@media (min-width: 768px) {
+  .btn__orange {
+    padding: 1.2rem 6rem;
+    font-size: 20px;
+  }
+}
+
 
 
 /**********************************NAV*********************************/
-img {
-  max-width: 6rem;
+.img__nav img {
+  width: 30%;
   margin: 1rem;
+}
+
+@media (min-width: 500px) {
+  .img__nav img {
+    max-width: 145px;
+  }
 }
 
 .hamburger {
@@ -127,7 +164,7 @@ img {
   top: 0;
   height: 30px;
   width: 30px;
-  padding: 1rem 20rem;
+  padding: 5% 5% 5% 85%;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
@@ -138,6 +175,12 @@ img {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 .hamburger.is-active {
@@ -244,7 +287,14 @@ img {
   font-size: 20px;
   font-family: var(--font_headings);
   color: var(--dark);
-  margin: 1rem;
+  margin: 10%;
+}
+
+@media (min-width: 768px) {
+  .header__area h1 {
+    font-size: 40px;
+    margin: 8%;
+  }
 }
 
 .header__area span {
@@ -256,12 +306,12 @@ img {
 
 .header__area p {
   color: var(--grey);
-  margin: 1rem;
+  margin: 10%;
 }
 
 .header__area img {
   max-width: 80%;
-  padding: 0rem 2rem;
+  padding: 0% 10%;
 }
 
 .header__area .header__btn {
@@ -269,6 +319,11 @@ img {
   padding-bottom: 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .header__area .header__btn {
+    padding-bottom: 8%;
+  }
+}
 
 /******************************SOLUTIONS*****************************/
 
@@ -280,10 +335,22 @@ section .solution__area {
   border-top-right-radius: 7%;
 }
 
+@media (min-width: 768px) {
+  section .solution__area {
+    padding-bottom: 1%;
+  }
+}
+
 .solution__area h2 {
   color: var(--dark);
-  padding: 2rem 1rem 0rem;
+  padding: 20% 10%;
   text-align: initial;
+}
+
+@media (min-width: 768px) {
+  .solution__area h2 {
+    padding: 9% 10% 5% 15%;
+  }
 }
 
 .solution__area h2 span {
@@ -293,21 +360,33 @@ section .solution__area {
   margin: 0rem;
 }
 
-
 .solution__area p {
-  margin: 1rem;
+  margin: 10%;
   padding-bottom: 1rem;
   color: var(--grey);
 }
 
+@media (min-width: 768px) {
+  .solution__area p {
+    font-size: 20px;
+    margin: 5%;
+  }
+}
+
 .solution__area img {
   max-width: 80%;
-  padding: 0rem 2rem 3rem;
+  padding: 0% 10%;
 }
 
 .solution__area .solution__btn {
   text-align: center;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .solution__area .solution__btn {
+    margin: 5%;
+  }
 }
 
 /******************************SERVICES*****************************/
@@ -316,9 +395,16 @@ section .solution__area {
 }
 
 .service__box {
-  margin: 1rem;
-  padding: 0.5rem;
+  margin: 10%;
+  padding: 0.5%;
   border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .service__box {
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
 }
 
 .service__box:hover {
@@ -375,7 +461,7 @@ section .solution__area {
 }
 
 .choose_box {
-  margin: 0.5rem;
+  margin: 0.5%;
   border-radius: 7px;
   padding-bottom: 1rem;
 }
@@ -388,9 +474,16 @@ section .solution__area {
 }
 
 .choose__text h2 {
-  margin: 1rem;
-  padding-top: 2rem;
+  margin: 10%;
+  padding-top: 20%;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .choose__text h2 {
+    padding-top: 10%;
+    margin-top: 5%;
+  }
 }
 
 .choose__text h2 span {
@@ -401,26 +494,45 @@ section .solution__area {
 }
 
 .choose__text p {
-  margin: 0rem 1rem 2rem;
+  margin: 0% 10% 20%;
   text-align: center;
   color: var(--grey);
 }
 
-.choose_box img {
-  max-width: 80%;
-  padding: 0rem 2rem;
+@media (min-width: 768px) {
+  .choose__text p {
+    margin-bottom: 5%;
+  }
 }
 
-.choose_box h3 {
+
+.choose_box img {
+  max-width: 80%;
+  padding: 0% 10%;
+}
+
+.choose_box h2 {
   font-family: var(--font_headings);
   font-size: 22px;
   text-align: center;
-  margin-top: 0.5rem;
+  margin-top: 0.5%;
+}
+
+@media (min-width: 768px) {
+  .choose_box h2 {
+    font-size: 35px;
+  }
 }
 
 .choose_box p {
   text-align: center;
   color: var(--grey);
+}
+
+@media (min-width: 768px) {
+  .choose_box p {
+    margin: 5% 5% 10%;
+  }
 }
 
 .choose__btn {
@@ -434,13 +546,19 @@ section .solution__area {
 }
 
 .footer__social p {
-  margin: 1rem 1.5rem 2rem 1.5rem;
+  margin: 10% 10.5% 20% 10.5%;
   color: var(--grey);
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .footer__social p {
+    margin-bottom: 10%;
+  }
+}
+
 .footer_icons {
-  margin: 1rem 2rem;
+  margin: 5% 15%;
   display: flex;
   justify-content: space-between;
 }
@@ -448,39 +566,60 @@ section .solution__area {
 .footer__social .footer_icons i {
   color: var(--grey);
   text-align: center;
-  padding-top: 0.32rem;
-
+  padding-top: 0.32px;
 }
 
 .footer__social .footer_icons i:hover {
   color: var(--bg);
   background-color: var(--btn_or);
-  width: 25px;
+  width: 22px;
   height: 21px;
   border-radius: 50%;
+  text-align: center;
 }
 
 .footer__company {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .footer__company {
+    margin-top: 5%;
+  }
+}
+
 .footer__h3 {
   color: var(--dark);
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 10%;
+}
+
+@media (min-width: 768px) {
+  .footer__h3 {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
 }
 
 .footer_list ul {
   color: var(--btn_or);
   font-size: 15px;
-  margin-top: 1rem;
-  padding-left: 3rem;
+  margin-top: 5%;
+  padding-left: 20%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
+@media (min-width: 768px) {
+  .footer_list ul {
+    font-size: 20px;
+    margin-top: 2%;
+    padding-left: 20%;
+  }
+}
+
 .footer_list ul li {
-  margin-top: 0.3rem;
+  margin-top: 10%;
 }
 
 .footer_list ul span {
@@ -492,8 +631,9 @@ section .solution__area {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-left: 3.5rem;
-  line-height: 1.5rem;
+  margin-left: 18%;
+  margin-bottom: 10%;
+  line-height: 10%;
   list-style: none;
 }
 

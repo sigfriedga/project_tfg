@@ -11,11 +11,3 @@ function toggleMenu(event) {
 // event
 menu.addEventListener('click', toggleMenu, false);
 
-//Solución con jQUery
-/*$(document).ready(function(){
-	$('.hamburger').click(function() {
-		$('.hamburger').toggleClass('is-active');
-		$('.menuresponsive').toggleClass('is-active');
-		return false;
-	});
-});*/
