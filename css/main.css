@@ -325,6 +325,17 @@ textarea {
   }
 }
 
+@media (min-width: 1024px) {
+  .header__area h1 {
+    font-size: 40px;
+    margin: 20%;
+  }
+  .header__area img {
+    max-width: 40%;
+    padding: 0% 25%;
+  }
+}
+
 /******************************SOLUTIONS*****************************/
 
 section .solution__area {
