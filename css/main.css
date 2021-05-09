@@ -26,13 +26,7 @@
   --icon_g: #299729;
   --icon_g_bg: #bce0bc;
   --grey: #5e5e5e;
-
-  --font_headings: font-family: 'Oswald', sans-serif;
-  --font_text: font-family: 'Source Sans Pro', sans-serif;
 }
-
-
-
 
 /*
  * 
@@ -109,18 +103,22 @@ textarea {
 @media (min-width: 768px) {
   h1 {
     font-size: 40px;
+    font-family: 'Oswald', sans-serif;
   }
 
   h2 {
     font-size: 35px;
+    font-family: 'Oswald', sans-serif;
   }
 
   h3 {
     font-size: 30px;
+    font-family: 'Oswald', sans-serif;
   }
 
   p {
     font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 }
 
@@ -132,6 +130,12 @@ textarea {
   padding: 0.6rem 2rem;
   text-decoration: none;
   font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.choose__btn .btn__orange i {
+  margin-left: 1rem;
+  font-size: 0.6rem;
 }
 
 @media (min-width: 768px) {
@@ -383,7 +387,7 @@ section .solution__area {
 }
 
 .solution__area p {
-  margin: 10%;
+  margin: 5% 10% 10%;
   padding-bottom: 1rem;
   color: var(--grey);
 }
@@ -571,6 +575,7 @@ section .solution__area {
 .choose_box p {
   text-align: center;
   color: var(--grey);
+  margin: 0% 5%;
 }
 
 @media (min-width: 768px) {
@@ -637,10 +642,10 @@ section .solution__area {
 .footer__social .footer_icons i:hover {
   color: var(--bg);
   background-color: var(--btn_or);
-  width: 22px;
+  width: 24px;
   height: 21px;
   border-radius: 50%;
-  text-align: center;
+  padding-top: 0.3rem;
 }
 
 .footer__company {
@@ -675,6 +680,10 @@ section .solution__area {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.footer_list ul li {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 @media (min-width: 768px) {
   .footer_list ul {
     font-size: 20px;
@@ -696,7 +705,7 @@ section .solution__area {
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-left: 18%;
+  margin-left: 13%;
   margin-bottom: 10%;
   line-height: 10%;
   list-style: none;
@@ -716,18 +725,6 @@ section .solution__area {
   color: var(--grey);
 }
 
-.copy {
-  border-top: solid 1px var(--grey);
-}
-
-.copy p {
-  color: var(--grey);
-  text-align: center;
-}
-
-.copy p span {
-  color: var(--btn_or);
-}
 
 @media (min-width: 1024px) {
   .footer__area {
@@ -749,6 +746,12 @@ section .solution__area {
 
   .footer_list ul {
     display: block;
+    margin-top: 3rem;
+  }
+
+  .footer_list ul li {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
   }
 
   .footer_list ul:last-child {
@@ -767,13 +770,18 @@ section .solution__area {
 }*/
 }
 
+.copy {
+  border-top: solid 1px var(--btn_or);
+}
 
+.copy p {
+  color: var(--grey);
+  text-align: center;
+}
 
-
-
-
-
-
+.copy p span {
+  color: var(--btn_or);
+}
 
 
 
