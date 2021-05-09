@@ -100,25 +100,31 @@ textarea {
   background-color: var(--white);
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 @media (min-width: 768px) {
   h1 {
     font-size: 40px;
-    font-family: 'Oswald', sans-serif;
   }
 
   h2 {
     font-size: 35px;
-    font-family: 'Oswald', sans-serif;
   }
 
   h3 {
     font-size: 30px;
-    font-family: 'Oswald', sans-serif;
   }
 
   p {
     font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
   }
 }
 
@@ -175,12 +181,6 @@ textarea {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none
-}
-
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
 }
 
 .hamburger.is-active {
@@ -254,7 +254,6 @@ textarea {
 .menuppal ul li {
   list-style: none;
   text-align: center;
-  font-family: var(--font_text);
   /*color:$nav-color-text;*/
   font-size: 1.5rem;
   line-height: 3em;
@@ -267,11 +266,18 @@ textarea {
 .menuppal ul li a {
   text-decoration: none;
   color: var(--blue);
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menuppal ul li a:hover {
   text-decoration: none;
   color: var(--btn_or);
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
 /*******************************HEADER********************************/
@@ -285,7 +291,6 @@ textarea {
 
 .header__area h1 {
   font-size: 20px;
-  font-family: var(--font_headings);
   color: var(--dark);
   margin: 10%;
 }
@@ -300,7 +305,7 @@ textarea {
 .header__area span {
   border: solid 1px var(--btn_or);
   border-radius: 60%;
-  padding: .2rem;
+  padding: .1rem;
   margin: 0rem;
 }
 
@@ -382,7 +387,7 @@ section .solution__area {
 .solution__area h2 span {
   border: solid 1px var(--btn_or);
   border-radius: 60%;
-  padding: .2rem;
+  padding: 0.1rem;
   margin: 0rem;
 }
 
@@ -481,6 +486,7 @@ section .solution__area {
   color: var(--dark);
   text-decoration: none;
   font-weight: 600;
+  font-family: 'Oswald', sans-serif;
 }
 
 @media (min-width: 1024px) {
@@ -560,7 +566,6 @@ section .solution__area {
 }
 
 .choose_box h2 {
-  font-family: var(--font_headings);
   font-size: 22px;
   text-align: center;
   margin-top: 0.5%;
@@ -698,7 +703,6 @@ section .solution__area {
 
 .footer_list ul span {
   color: var(--grey);
-  font-family: var(--font_text);
 }
 
 .footer__contact .footer_list ul {
