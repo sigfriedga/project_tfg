@@ -17,6 +17,7 @@
   --white: #ffffff;
   --bg: #fafafa;
   --btn_or: #f35923;
+  --btn__hover: #db5020;
   --blue: #3c81ed;
   --dark: #26262d;
   --icon_r: #f16938;
@@ -138,6 +139,9 @@ p {
   text-decoration: none;
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
+}
+.btn__orange:hover{
+  background-color: var(--btn__hover);
 }
 
 .choose__btn .btn__orange i {
@@ -623,16 +627,24 @@ section .solution__area {
 .footer__social {
   border-bottom: solid 1px var(--btn_or);
 }
+.footer__social img{
+  width: 30%;
+  margin: 10% 35% 0%;
+}
 
 .footer__social p {
-  margin: 10% 10.5% 20% 10.5%;
+  margin: 5% 10.5% 20% 10.5%;
   color: var(--grey);
   text-align: center;
 }
 
 @media (min-width: 768px) {
+  .footer__social img{
+    width: 18%;
+    margin-left: 41%;
+  }
   .footer__social p {
-    margin-bottom: 10%;
+    margin: 2% 10% 5%;
     font-size: 25px;
   }
 }
@@ -742,15 +754,18 @@ section .solution__area {
     margin: 3% 1%;
     padding: 0% 10% 0% 5%;
   }
-
+  
   .footer__company {
     margin-top: 0%;
   }
 
   .footer__social {
     max-width: 20%;
-    margin-top: 4%;
     border-bottom: none;
+  }
+  .footer__social img {
+    width: 45%;
+    margin: 5% 0% 7% 26%;
   }
 
   .footer_list ul {
@@ -964,6 +979,7 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--grey_clear);
   height: 30px;
+  
 }
 
 .speed__area .speed__btn input:nth-child(1) {
@@ -974,7 +990,6 @@ p {
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   padding-left: 3%;
-
 }
 
 .speed__area .speed__btn input:nth-child(2) {
