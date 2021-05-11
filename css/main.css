@@ -125,7 +125,7 @@ p {
   }
 
   p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -300,6 +300,9 @@ p {
   .header__area h1 {
     font-size: 40px;
     margin: 8%;
+  }
+  .header__area p{
+    font-size: 25px;
   }
 }
 
@@ -630,6 +633,7 @@ section .solution__area {
 @media (min-width: 768px) {
   .footer__social p {
     margin-bottom: 10%;
+    font-size: 25px;
   }
 }
 
@@ -833,6 +837,28 @@ p {
   margin: 5%;
 }
 
+@media (min-width: 768PX) {
+  .need__area H1{
+    font-size: 35PX;
+  }
+  .need__area P{
+    font-size: 25PX;
+    margin: 0% 10% 10%;
+  }
+  .need__box{
+    
+    border: solid 2px var(--grey_clear);
+    padding: 1rem;
+  }
+  .need__box i{
+    width: 56px;
+    height: 56px;
+    font-size: 35px;
+    padding-left: 22px;
+    padding-top: 20px;
+  }
+}
+
 /**CountDown**/
 
 .countdown {
@@ -877,6 +903,26 @@ p {
   color: var(--icon_y);
 }
 
+@media (min-width: 768px) {
+  .countdown {
+    border: none;
+  }
+  #countdown__area ul {
+    padding-left: 10%;
+  }
+  #countdown__area ul li{
+    margin: 5% 0%;
+    border-bottom: solid 1px var(--btn_or);
+  }
+  .countdown li{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  #countdown__area i{
+    display: none;
+  }
+}
+
 /**Speed**/
 
 .speed__area {
@@ -886,17 +932,10 @@ p {
   background-color: var(--white);
 }
 
-.speed__area h1 {
+.speed__area h2 {
   font-size: 20px;
   color: var(--dark);
   margin: 10%;
-}
-
-@media (min-width: 768px) {
-  .speed__area h1 {
-    font-size: 40px;
-    margin: 8%;
-  }
 }
 
 .speed__area span {
@@ -948,7 +987,18 @@ p {
 
 }
 
+
 @media (min-width: 768px) {
+  .speed__area h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .speed__area p {
+    font-size: 25px;
+    margin-top: 0%;
+  
+  }
   .speed__area .speed__btn {
     padding-bottom: 8%;
   }
