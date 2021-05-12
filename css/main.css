@@ -140,7 +140,8 @@ p {
   font-size: 12px;
   font-family: 'Source Sans Pro', sans-serif;
 }
-.btn__orange:hover{
+
+.btn__orange:hover {
   background-color: var(--btn__hover);
 }
 
@@ -305,7 +306,8 @@ p {
     font-size: 40px;
     margin: 8%;
   }
-  .header__area p{
+
+  .header__area p {
     font-size: 25px;
   }
 }
@@ -627,7 +629,8 @@ section .solution__area {
 .footer__social {
   border-bottom: solid 1px var(--btn_or);
 }
-.footer__social img{
+
+.footer__social img {
   width: 30%;
   margin: 10% 35% 0%;
 }
@@ -639,10 +642,11 @@ section .solution__area {
 }
 
 @media (min-width: 768px) {
-  .footer__social img{
+  .footer__social img {
     width: 18%;
     margin-left: 41%;
   }
+
   .footer__social p {
     margin: 2% 10% 5%;
     font-size: 25px;
@@ -754,7 +758,7 @@ section .solution__area {
     margin: 3% 1%;
     padding: 0% 10% 0% 5%;
   }
-  
+
   .footer__company {
     margin-top: 0%;
   }
@@ -763,6 +767,7 @@ section .solution__area {
     max-width: 20%;
     border-bottom: none;
   }
+
   .footer__social img {
     width: 45%;
     margin: 5% 0% 7% 26%;
@@ -853,19 +858,22 @@ p {
 }
 
 @media (min-width: 768PX) {
-  .need__area H1{
+  .need__area H1 {
     font-size: 35PX;
   }
-  .need__area P{
+
+  .need__area P {
     font-size: 25PX;
     margin: 0% 10% 10%;
   }
-  .need__box{
-    
+
+  .need__box {
+
     border: solid 2px var(--grey_clear);
     padding: 1rem;
   }
-  .need__box i{
+
+  .need__box i {
     width: 56px;
     height: 56px;
     font-size: 35px;
@@ -922,18 +930,22 @@ p {
   .countdown {
     border: none;
   }
+
   #countdown__area ul {
     padding-left: 10%;
   }
-  #countdown__area ul li{
+
+  #countdown__area ul li {
     margin: 5% 0%;
     border-bottom: solid 1px var(--btn_or);
   }
-  .countdown li{
+
+  .countdown li {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
-  #countdown__area i{
+
+  #countdown__area i {
     display: none;
   }
 }
@@ -979,7 +991,7 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--grey_clear);
   height: 30px;
-  
+
 }
 
 .speed__area .speed__btn input:nth-child(1) {
@@ -1009,11 +1021,13 @@ p {
     text-align: center;
     margin-bottom: 5%;
   }
+
   .speed__area p {
     font-size: 25px;
     margin-top: 0%;
-  
+
   }
+
   .speed__area .speed__btn {
     padding-bottom: 8%;
   }
@@ -1045,10 +1059,60 @@ p {
   }
 }
 
+/*****************TEAM****************************/
+.team__area {
+  width: 140%;
+  /*display: flex;*/
+  overflow: auto;
+
+}
+
+.team__box {
+  width: 50%;
+  margin: 5%;
+  padding: 2.5%;
+  border: solid 1px var(--grey_clear);
+}
+
+.team__img {}
+
+.team__img img {
+  width: 60%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.team__text {
+  margin-left: 20%;
+}
+
+.team__text h3 {
+  margin-left: 20%;
+  color: var(--dark);
+}
+
+.team__text p {
+  margin-left: 10%;
+  margin-bottom: 10%;
+  color: var(--dark);
+}
+
+.team__icons i {
+  color: var(--dark);
+  text-align: center;
+  padding-top: 0.32px;
+  margin: 5%;
+}
 
 
-
-
+.team__icons i:hover {
+  color: var(--bg);
+  background-color: var(--btn_or);
+  width: 24px;
+  height: 21px;
+  border-radius: 50%;
+  padding-top: 0.3rem;
+}
 
 
 /* ==========================================================================
