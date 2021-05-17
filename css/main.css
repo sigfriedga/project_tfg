@@ -872,7 +872,6 @@ p {
   }
 
   .need__box {
-
     border: solid 2px var(--grey_clear);
     padding: 1rem;
   }
@@ -902,8 +901,9 @@ p {
 .plans__area--box {
   width: 60%;
   height: 280px;
-  margin: 10%;
-  padding: 10%;
+  margin: 0% 15%;
+  padding: 5%;
+  border-radius: 20px;
 }
 
 .plans__area--box:hover {
@@ -916,6 +916,7 @@ p {
 .plans__area--box h3,
 .plans__area--box p {
   text-align: center;
+  margin-left: 5%;
   line-height: 1.5rem;
 }
 
@@ -942,6 +943,90 @@ p {
 .plans__area--btn .btn__clear:hover {
   color: var(--white) !important;
   background-color: var(--btn_or);
+}
+
+@media (min-width: 768px) {
+  .plans__area {
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  .plans__area--header h2 {
+    font-size: 40px;
+  }
+
+  .plans__area--header p {
+    font-size: 30px;
+    margin-bottom: 0%;
+  }
+
+  .plans__area--box {
+    padding: 2% 10% 30% 10%;
+    margin: 5% 10% 5% 10%;
+  }
+
+  .plans__area--box:first-of-type {
+    padding: 1% 10% 20%;
+  }
+
+  .plans__area--box h3 {
+    font-size: 35px;
+  }
+
+  .plans__area--box p {
+    font-size: 30px;
+    line-height: 2.5rem;
+  }
+
+  .plans__area--btn {
+    max-width: 150%;
+    margin: 18% 5% 15% 0%;
+  }
+
+  .btn__orange {
+    margin: 20% 5% 0% 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plans__area {
+    padding-bottom: 5%;
+    padding-top: 3%;
+  }
+
+  .plans__area--boxes {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
+  }
+
+  .plans__area--box:first-of-type {
+    margin-left: 10%;
+    padding: 2% 7% 30% 7%;
+  }
+
+  .plans__area--box {
+    margin: 2%;
+    padding: 2% 7% 30% 7%;
+  }
+
+  .plans__area--header h2 {
+    font-size: 30px;
+  }
+
+  .plans__area--header p {
+    font-size: 20px;
+    margin-bottom: 0%;
+  }
+
+  .plans__area--btn {
+    width: 200px;
+    margin-top: 30%;
+  }
+
+  .btn__orange {
+    font-size: 15px;
+  }
 }
 
 /**CountDown**/
