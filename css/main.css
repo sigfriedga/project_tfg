@@ -19,6 +19,7 @@
   --btn_or: #f35923;
   --btn__hover: #db5020;
   --blue: #3c81ed;
+  --blue__bg: #a1c1f5;
   --dark: #26262d;
   --icon_r: #f16938;
   --icon_r_bg: #fbd3c7;
@@ -162,6 +163,8 @@ p {
 }
 
 /**********************************NAV*********************************/
+
+
 .img__nav img {
   width: 30%;
   margin: 1rem;
@@ -176,11 +179,11 @@ p {
 .hamburger {
   position: fixed;
   background-color: transparent;
-  left: 0;
-  top: 0;
+  right: 5%;
+  top: 2%;
   height: 30px;
   width: 30px;
-  padding: 5% 5% 5% 85%;
+  position: right;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
@@ -849,6 +852,21 @@ p {
 .need__box .fa-chart-pie {
   color: var(--icon_y);
   background-color: var(--icon_y_bg);
+}
+
+.need__box .fa-chart-line {
+  color: var(--icon_y);
+  background-color: var(--icon_y_bg);
+}
+
+.need__box .fa-bug {
+  color: var(--icon_g);
+  background-color: var(--icon_g_bg);
+}
+
+.need__box .fa-mobile-alt {
+  color: var(--blue);
+  background-color: var(--blue__bg);
 }
 
 .need__text {
