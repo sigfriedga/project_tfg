@@ -163,7 +163,9 @@ p {
 }
 
 /**********************************NAV*********************************/
-
+.nav__desktop {
+  display: none;
+}
 
 .img__nav img {
   width: 30%;
@@ -291,6 +293,30 @@ p {
   .hamburger {
     display: none;
   }
+
+  .nav__desktop {
+    display: block;
+  }
+
+  .nav__desktop ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0px 5% 10px 10%;
+  }
+
+  .nav__desktop li>a {
+    color: var(--blue);
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    margin-left: 20px;
+  }
+
+  .nav__desktop .btn__orange {
+    padding: 5px 30px;
+    font-size: 13px;
+  }
 }
 
 /*******************************HEADER********************************/
@@ -356,20 +382,26 @@ p {
 
   .header__text {
     margin: 1% 1%;
-    padding: 5% 5% 1%;
+    padding: 5% 2% 1%;
   }
 
   .header__area h1 {
-    font-size: 40px;
+    font-size: 35px;
+    margin: 5% 7%;
   }
 
   .header__img {
-    max-width: 50%;
+    width: 600px;
     margin: 3% 3% 5% 0%;
   }
 
   .header__btn {
-    margin-top: 20%
+    margin-top: 15%
+  }
+
+  .header__area p {
+    margin: 1% 7% 1%;
+    font-size: 20px;
   }
 }
 
@@ -441,6 +473,28 @@ section .solution__area {
   .solution__area {
     display: flex;
     justify-content: space-around;
+  }
+
+  .solution__area h2 {
+    padding: 5% 1% 2% 5%;
+  }
+
+  .solution__area p {
+    font-size: 20px;
+    margin: 2% 5%;
+    width: 50%;
+  }
+
+  .solution__btn {
+    margin: 2%;
+    padding: 0.8rem 2.5rem;
+    width: 40%;
+  }
+
+  .solution__area img {
+    width: 900px;
+    margin-left: 5%;
+
   }
 }
 
@@ -629,6 +683,10 @@ section .solution__area {
 
   .btn__orange {
     padding: 0.8rem 2rem;
+  }
+
+  .Keyres {
+    margin-bottom: 26%;
   }
 }
 
