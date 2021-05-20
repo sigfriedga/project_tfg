@@ -983,6 +983,7 @@ p {
     max-width: 60%;
     margin-left: 18%;
   }
+}
 
   /**Plans**/
 
@@ -1151,7 +1152,6 @@ p {
 
   #countdown__area li span {
     font-size: 60px;
-
     display: block;
   }
 
@@ -1243,7 +1243,6 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     background-color: var(--grey_clear);
     height: 30px;
-
   }
 
   .speed__area .speed__btn input:nth-child(1) {
