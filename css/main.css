@@ -807,7 +807,8 @@ section .solution__area {
   list-style: none;
 }
 
-.footer_list li>span {
+.footer_list li>span,
+.footer_list a>span {
   color: var(--dark);
   font-weight: bold;
 }
@@ -985,477 +986,492 @@ p {
   }
 }
 
-  /**Plans**/
+/**Plans**/
 
+.plans__area {
+  max-width: 100%;
+  padding: 10%;
+  background-color: var(--bg);
+}
+
+.plans__area--header h2,
+.plans__area--header p {
+  text-align: center;
+}
+
+.plans__area--box {
+  width: 60%;
+  height: 280px;
+  margin: 0% 12%;
+  padding: 5%;
+  border-radius: 20px;
+}
+
+.plans__area--box:hover {
+  background-color: var(--white);
+  -webkit-box-shadow: 13px 51px 128px -52px rgba(38, 38, 45, 0.35);
+  -moz-box-shadow: 13px 51px 128px -52px rgba(38, 38, 45, 0.35);
+  box-shadow: 13px 51px 128px -52px rgba(38, 38, 45, 0.35);
+}
+
+.plans__area--box h3,
+.plans__area--box p {
+  text-align: center;
+  margin-left: 5%;
+  line-height: 1.5rem;
+}
+
+.plans__area--beginer {
+  color: var(--btn_or);
+}
+
+.plans__area--price span {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.plans__area--btn {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.plans__area--btn .btn__clear {
+  color: var(--btn_or) !important;
+  font-weight: 400;
+  background-color: var(--icon_r_bg);
+}
+
+.plans__area--btn .btn__clear:hover {
+  color: var(--white) !important;
+  background-color: var(--btn_or);
+}
+
+@media (min-width: 540px) {
+
+  .plans__area--btn .btn__clear,
+  .plans__area--btn .btn__orange {
+    margin-left: 24%;
+  }
+}
+
+@media (min-width: 768px) {
   .plans__area {
-    max-width: 100%;
-    padding: 10%;
-    background-color: var(--bg);
+    padding-bottom: 5%;
+    padding-top: 5%;
   }
 
-  .plans__area--header h2,
+  .plans__area--header h2 {
+    font-size: 40px;
+  }
+
   .plans__area--header p {
-    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0%;
   }
 
   .plans__area--box {
-    width: 60%;
-    height: 280px;
-    margin: 0% 12%;
-    padding: 5%;
-    border-radius: 20px;
+    padding: 2% 10% 30% 10%;
+    margin: 5% 10% 5% 10%;
   }
 
-  .plans__area--box:hover {
-    background-color: var(--white);
-    -webkit-box-shadow: 13px 51px 128px -52px rgba(38, 38, 45, 0.35);
-    -moz-box-shadow: 13px 51px 128px -52px rgba(38, 38, 45, 0.35);
-    box-shadow: 13px 51px 128px -52px rgba(38, 38, 45, 0.35);
+  .plans__area--box:first-of-type {
+    padding: 1% 10% 20%;
   }
 
-  .plans__area--box h3,
+  .plans__area--box h3 {
+    font-size: 35px;
+  }
+
   .plans__area--box p {
-    text-align: center;
-    margin-left: 5%;
-    line-height: 1.5rem;
-  }
-
-  .plans__area--beginer {
-    color: var(--btn_or);
-  }
-
-  .plans__area--price span {
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 30px;
+    line-height: 2.5rem;
   }
 
   .plans__area--btn {
-    margin-top: 2rem;
-    margin-left: 2rem;
+    max-width: 150%;
+    margin: 18% 5% 15% 0%;
   }
 
-  .plans__area--btn .btn__clear {
-    color: var(--btn_or) !important;
-    font-weight: 400;
-    background-color: var(--icon_r_bg);
+  .btn__orange {
+    margin: 20% 5% 0% 15%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .plans__area {
+    padding-bottom: 5%;
+    padding-top: 3%;
   }
 
-  .plans__area--btn .btn__clear:hover {
-    color: var(--white) !important;
-    background-color: var(--btn_or);
+  .plans__area--boxes {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 90%;
   }
 
-  @media (min-width: 768px) {
-    .plans__area {
-      padding-bottom: 5%;
-      padding-top: 5%;
-    }
-
-    .plans__area--header h2 {
-      font-size: 40px;
-    }
-
-    .plans__area--header p {
-      font-size: 30px;
-      margin-bottom: 0%;
-    }
-
-    .plans__area--box {
-      padding: 2% 10% 30% 10%;
-      margin: 5% 10% 5% 10%;
-    }
-
-    .plans__area--box:first-of-type {
-      padding: 1% 10% 20%;
-    }
-
-    .plans__area--box h3 {
-      font-size: 35px;
-    }
-
-    .plans__area--box p {
-      font-size: 30px;
-      line-height: 2.5rem;
-    }
-
-    .plans__area--btn {
-      max-width: 150%;
-      margin: 18% 5% 15% 0%;
-    }
-
-    .btn__orange {
-      margin: 20% 5% 0% 15%;
-    }
+  .plans__area--box:first-of-type {
+    margin-left: 10%;
+    padding: 2% 7% 30% 7%;
   }
 
-  @media (min-width: 1024px) {
-    .plans__area {
-      padding-bottom: 5%;
-      padding-top: 3%;
-    }
-
-    .plans__area--boxes {
-      display: flex;
-      justify-content: space-evenly;
-      max-width: 90%;
-    }
-
-    .plans__area--box:first-of-type {
-      margin-left: 10%;
-      padding: 2% 7% 30% 7%;
-    }
-
-    .plans__area--box {
-      margin: 2%;
-      padding: 2% 7% 30% 7%;
-    }
-
-    .plans__area--header h2 {
-      font-size: 30px;
-    }
-
-    .plans__area--header p {
-      font-size: 20px;
-      margin-bottom: 0%;
-    }
-
-    .plans__area--btn {
-      width: 200px;
-      margin-top: 30%;
-    }
-
-    .btn__orange {
-      font-size: 15px;
-      padding: 10px 60px;
-    }
+  .plans__area--box {
+    margin: 2%;
+    padding: 2% 7% 30% 7%;
   }
 
-  /**CountDown**/
+  .plans__area--header h2 {
+    font-size: 30px;
+  }
 
+  .plans__area--header p {
+    font-size: 20px;
+    margin-bottom: 0%;
+  }
+
+  .plans__area--btn {
+    width: 200px;
+    margin-top: 30%;
+  }
+
+  .btn__orange {
+    font-size: 15px;
+    /*padding: 10px 60px;*/
+  }
+}
+
+/*********************ABOUT****************************/
+/**CountDown**/
+
+.countdown {
+  border: 2px solid var(--grey_clear);
+  margin: 10%;
+  padding-left: 5%;
+}
+
+#countdown__area ul {
+  list-style: none;
+  font-size: 50px;
+  padding-left: 20%;
+}
+
+#countdown__area li {
+  font-family: 'Oswald', sans-serif;
+  color: var(--grey);
+  font-weight: 700;
+}
+
+#countdown__area li span {
+  font-size: 60px;
+  display: block;
+}
+
+#countdown__area i {
+  font-size: 20px;
+  margin-left: 25%;
+  color: var(--icon_r);
+}
+
+#countdown__area i:nth-child(4) {
+  color: var(--icon_g);
+}
+
+#countdown__area i:nth-child(5) {
+  color: var(--icon_g);
+}
+
+#countdown__area i:nth-child(6) {
+  color: var(--icon_y);
+}
+
+@media (min-width: 768px) {
   .countdown {
-    border: 2px solid var(--grey_clear);
-    margin: 10%;
-    padding-left: 5%;
+    border: none;
   }
 
   #countdown__area ul {
-    list-style: none;
-    font-size: 50px;
-    padding-left: 20%;
+    padding-left: 10%;
+    font-size: 30px;
   }
 
-  #countdown__area li {
-    font-family: 'Oswald', sans-serif;
-    color: var(--grey);
-    font-weight: 700;
+  #countdown__area ul li {
+    margin: 5% 0%;
+    border-bottom: solid 1px var(--btn_or);
   }
 
-  #countdown__area li span {
-    font-size: 60px;
-    display: block;
+  .countdown li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   #countdown__area i {
-    font-size: 20px;
-    margin-left: 25%;
-    color: var(--icon_r);
+    display: none;
   }
 
-  #countdown__area i:nth-child(4) {
-    color: var(--icon_g);
+  #countdown__area li span {
+    font-size: 40px;
   }
+}
 
-  #countdown__area i:nth-child(5) {
-    color: var(--icon_g);
-  }
+/**Map**/
 
-  #countdown__area i:nth-child(6) {
-    color: var(--icon_y);
-  }
+#map {
+  height: 420px;
+}
 
-  @media (min-width: 768px) {
-    .countdown {
-      border: none;
-    }
+/**Speed**/
 
-    #countdown__area ul {
-      padding-left: 10%;
-      font-size: 30px;
-    }
+.speed__area {
+  max-width: 100vw;
+  max-height: 100%;
+  border-top: solid 1px var(--btn_or);
+  background-color: var(--white);
+}
 
-    #countdown__area ul li {
-      margin: 5% 0%;
-      border-bottom: solid 1px var(--btn_or);
-    }
+.speed__area h2 {
+  font-size: 20px;
+  color: var(--dark);
+  margin: 10%;
+}
 
-    .countdown li {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+.speed__area span {
+  border: solid 1px var(--btn_or);
+  border-radius: 60%;
+  padding: .1rem;
+  margin: 0rem;
+}
 
-    #countdown__area i {
-      display: none;
-    }
+.speed__area p {
+  color: var(--grey);
+  margin: 10% 10% 12%;
+}
 
-    #countdown__area li span {
-      font-size: 40px;
-    }
-  }
+.speed__area img {
+  max-width: 80%;
+  padding: 0% 10%;
+}
 
-  /**Speed**/
+.speed__area .speed__btn {
+  text-align: center;
+  padding-bottom: 1rem;
+}
 
-  .speed__area {
-    max-width: 100vw;
-    max-height: 100%;
-    border-top: solid 1px var(--btn_or);
-    background-color: var(--white);
-  }
+.speed__area .speed__btn input {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: var(--grey_clear);
+  height: 30px;
+}
 
+.speed__area .speed__btn input:nth-child(1) {
+  width: 37%;
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding-left: 3%;
+}
+
+.speed__area .speed__btn input:nth-child(2) {
+  margin-bottom: 10%;
+  width: 38%;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding-left: 2%;
+
+}
+
+
+@media (min-width: 768px) {
   .speed__area h2 {
-    font-size: 20px;
-    color: var(--dark);
-    margin: 10%;
-  }
-
-  .speed__area span {
-    border: solid 1px var(--btn_or);
-    border-radius: 60%;
-    padding: .1rem;
-    margin: 0rem;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5%;
   }
 
   .speed__area p {
-    color: var(--grey);
-    margin: 10% 10% 12%;
-  }
+    font-size: 25px;
+    margin-top: 0%;
 
-  .speed__area img {
-    max-width: 80%;
-    padding: 0% 10%;
   }
 
   .speed__area .speed__btn {
-    text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 8%;
+  }
+}
+
+/**Desktop*/
+@media (min-width: 1024px) {
+  .speed__area {
+    display: flex;
+    justify-content: space-around;
   }
 
-  .speed__area .speed__btn input {
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: var(--grey_clear);
-    height: 30px;
+  .speed__text {
+    margin: 1% 1%;
+    padding: 5% 5% 1%;
   }
 
-  .speed__area .speed__btn input:nth-child(1) {
-    width: 37%;
-    border-top: none;
-    border-bottom: none;
-    border-left: none;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    padding-left: 3%;
+  .speed__area h1 {
+    font-size: 40px;
   }
 
-  .speed__area .speed__btn input:nth-child(2) {
-    margin-bottom: 10%;
-    width: 38%;
-    border: none;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding-left: 2%;
-
+  .speed__img {
+    max-width: 50%;
+    margin: 3% 3% 5% 0%;
   }
 
-
-  @media (min-width: 768px) {
-    .speed__area h2 {
-      font-size: 40px;
-      text-align: center;
-      margin-bottom: 5%;
-    }
-
-    .speed__area p {
-      font-size: 25px;
-      margin-top: 0%;
-
-    }
-
-    .speed__area .speed__btn {
-      padding-bottom: 8%;
-    }
+  .speed__btn {
+    margin-top: 20%
   }
+}
 
-  /**Desktop*/
-  @media (min-width: 1024px) {
-    .speed__area {
-      display: flex;
-      justify-content: space-around;
-    }
+/*****************TEAM****************************/
+.team__area {
+  max-width: 100%;
+  /*display: flex;*/
+  overflow: auto;
+}
 
-    .speed__text {
-      margin: 1% 1%;
-      padding: 5% 5% 1%;
-    }
+.team__area h2,
+.team__area p {
+  text-align: center;
+  line-height: 20px;
+}
 
-    .speed__area h1 {
-      font-size: 40px;
-    }
+.team__box {
+  width: 50%;
+  margin: 10% 5% 10% 22%;
+  ;
+  padding: 5%;
+  border: solid 1px var(--grey_clear);
+}
 
-    .speed__img {
-      max-width: 50%;
-      margin: 3% 3% 5% 0%;
-    }
+.team__img img {
+  width: 60%;
+  border-radius: 50%;
+  margin-left: 20%;
+}
 
-    .speed__btn {
-      margin-top: 20%
-    }
-  }
+.team__text {
+  margin-left: 25%;
+}
 
-  /*****************TEAM****************************/
-  .team__area {
-    max-width: 100%;
-    /*display: flex;*/
-    overflow: auto;
-  }
+.team__text h3 {
+  color: var(--dark);
+  text-align: center;
+  margin-right: 25%;
+}
 
-  .team__area h2,
+.team__text p {
+  margin-bottom: 10%;
+  color: var(--dark);
+  margin-right: 30%;
+}
+
+.team__icons i {
+  color: var(--dark);
+  text-align: center;
+  padding-top: 0.32px;
+  margin: 5% 5% 5% 2%;
+}
+
+.team__icons i:hover {
+  color: var(--bg);
+  background-color: var(--btn_or);
+  width: 24px;
+  height: 21px;
+  border-radius: 50%;
+  padding-top: 0.3rem;
+}
+
+@media (min-width: 768px) {
   .team__area p {
-    text-align: center;
-    line-height: 20px;
-  }
-
-  .team__box {
-    width: 50%;
-    margin: 10% 5% 10% 22%;
-    ;
-    padding: 5%;
-    border: solid 1px var(--grey_clear);
-  }
-
-  .team__img img {
-    width: 60%;
-    border-radius: 50%;
-    margin-left: 20%;
+    font-size: 25px;
+    line-height: 35px;
   }
 
   .team__text {
-    margin-left: 25%;
+    margin-left: 20%;
   }
 
   .team__text h3 {
-    color: var(--dark);
-    text-align: center;
-    margin-right: 25%;
+    font-size: 35px;
   }
 
   .team__text p {
-    margin-bottom: 10%;
-    color: var(--dark);
-    margin-right: 30%;
+    font-size: 25px;
+    margin-left: 15%;
   }
 
   .team__icons i {
-    color: var(--dark);
-    text-align: center;
+    font-size: 25px;
     padding-top: 0.32px;
-    margin: 5% 5% 5% 2%;
+    margin-left: 5%;
   }
 
   .team__icons i:hover {
-    color: var(--bg);
-    background-color: var(--btn_or);
-    width: 24px;
-    height: 21px;
-    border-radius: 50%;
+    width: 35px;
+    height: 32px;
     padding-top: 0.3rem;
   }
+}
 
-  @media (min-width: 768px) {
-    .team__area p {
-      font-size: 25px;
-      line-height: 35px;
-    }
-
-    .team__text {
-      margin-left: 20%;
-    }
-
-    .team__text h3 {
-      font-size: 35px;
-    }
-
-    .team__text p {
-      font-size: 25px;
-      margin-left: 15%;
-    }
-
-    .team__icons i {
-      font-size: 25px;
-      padding-top: 0.32px;
-      margin-left: 5%;
-    }
-
-    .team__icons i:hover {
-      width: 35px;
-      height: 32px;
-      padding-top: 0.3rem;
-    }
+@media (min-width: 1024px) {
+  .team__area h2 {
+    font-size: 35px;
   }
 
-  @media (min-width: 1024px) {
-    .team__area h2 {
-      font-size: 35px;
-    }
-
-    .team__area p {
-      font-size: 25px;
-    }
-
-    .team__boxes {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    .team__box {
-      max-width: 20%;
-      margin: 5%;
-    }
-
-    .team__text h3 {
-      font-size: 30px;
-    }
-
-    .team__text p {
-      font-size: 20px;
-      margin-left: 5%;
-    }
-
-    .team__icons i {
-      font-size: 15px;
-    }
-
-    .team__icons i:hover {
-      width: 23px;
-      height: 20px;
-    }
+  .team__area p {
+    font-size: 25px;
   }
 
+  .team__boxes {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .team__box {
+    max-width: 20%;
+    margin: 5%;
+  }
+
+  .team__text h3 {
+    font-size: 30px;
+  }
+
+  .team__text p {
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .team__icons i {
+    font-size: 15px;
+  }
+
+  .team__icons i:hover {
+    width: 23px;
+    height: 20px;
+  }
+}
 
 
 
-  /* ==========================================================================
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
-  /*
+/*
  * Hide visually and from screen readers
  */
 
-  .hidden,
-  [hidden] {
-    display: none !important;
-  }
+.hidden,
+[hidden] {
+  display: none !important;
+}
 
-  /*
+/*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -1464,45 +1480,45 @@ p {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-  .sr-only {
-    border: 0;
-    clip: rect(0, 0, 0, 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    /* 1 */
-  }
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
 
-  /*
+/*
  * Extends the .sr-only class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-  .sr-only.focusable:active,
-  .sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    white-space: inherit;
-    width: auto;
-  }
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
 
-  /*
+/*
  * Hide visually and from screen readers, but maintain layout
  */
 
-  .invisible {
-    visibility: hidden;
-  }
+.invisible {
+  visibility: hidden;
+}
 
-  /*
+/*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -1514,105 +1530,105 @@ p {
  *    `:before` to contain the top-margins of child elements.
  */
 
-  .clearfix::before,
-  .clearfix::after {
-    content: " ";
-    display: table;
-  }
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
 
-  .clearfix::after {
-    clear: both;
-  }
+.clearfix::after {
+  clear: both;
+}
 
-  /* ==========================================================================
+/* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-  @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-  }
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
 
-  @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-  }
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
 
-  /* ==========================================================================
+/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-  @media print {
+@media print {
 
-    *,
-    *::before,
-    *::after {
-      background: #fff !important;
-      color: #000 !important;
-      /* Black prints faster */
-      box-shadow: none !important;
-      text-shadow: none !important;
-    }
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
 
-    a,
-    a:visited {
-      text-decoration: underline;
-    }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
 
-    a[href]::after {
-      content: " ("attr(href) ")";
-    }
+  a[href]::after {
+    content: " ("attr(href) ")";
+  }
 
-    abbr[title]::after {
-      content: " ("attr(title) ")";
-    }
+  abbr[title]::after {
+    content: " ("attr(title) ")";
+  }
 
-    /*
+  /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-    a[href^="#"]::after,
-    a[href^="javascript:"]::after {
-      content: "";
-    }
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
 
-    pre {
-      white-space: pre-wrap !important;
-    }
+  pre {
+    white-space: pre-wrap !important;
+  }
 
-    pre,
-    blockquote {
-      border: 1px solid #999;
-      page-break-inside: avoid;
-    }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
 
-    /*
+  /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-    thead {
-      display: table-header-group;
-    }
-
-    tr,
-    img {
-      page-break-inside: avoid;
-    }
-
-    p,
-    h2,
-    h3 {
-      orphans: 3;
-      widows: 3;
-    }
-
-    h2,
-    h3 {
-      page-break-after: avoid;
-    }
+  thead {
+    display: table-header-group;
   }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

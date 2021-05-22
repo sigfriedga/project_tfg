@@ -25,6 +25,7 @@
     href="https://fonts.googleapis.com/css2? family = Oswald: wght @ 300; 500; 700 & family = Source + Sans + Pro: wght @ 300; 400; 700 & display = swap "
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/6cf2391fde.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -113,27 +114,10 @@
       </ul>
     </div>
   </section>
-
-  <section class="speed__area">
-    <div class="speed__text">
-      <h2>Check Your Website Speed</h2>
-      <p>Distinctively exploit optimal alignaments for intuitive bandwidth. Quickly coordinate e-business aplications
-        through revolutionary.</p>
-      <div class="speed__btn">
-        <div class="speed__inputs">
-          <input type="text" placeholder="Web:"><input type="mail" placeholder="Email:">
-        </div>
-        <a class="btn__orange" href="http://">Submit</a>
-      </div>
-      <!--header__btn-->
+  <section>
+    <div id="map" class="map">
     </div>
-    <!--header__text-->
-    <div class="speed__img">
-      <img src="img/File synchronization-bro.png" alt="">
-    </div>
-
   </section>
-
 
   <footer class="footer__area">
     <div class="footer__social">
@@ -192,6 +176,7 @@
     <p>&copy <span>Siwi</span> <?php date() ?>All Rights Reserved.</p>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
