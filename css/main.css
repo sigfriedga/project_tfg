@@ -1050,7 +1050,7 @@ p {
 
   .plans__area--btn .btn__clear,
   .plans__area--btn .btn__orange {
-    margin-left: 24%;
+    margin-left: 22%;
   }
 }
 
@@ -1093,7 +1093,7 @@ p {
   }
 
   .btn__orange {
-    margin: 20% 5% 0% 15%;
+    margin: 20% 5% 0% 4%;
   }
 }
 
@@ -1116,7 +1116,7 @@ p {
 
   .plans__area--box {
     margin: 2%;
-    padding: 2% 7% 30% 7%;
+    padding: 2% 7% 40% 3%;
   }
 
   .plans__area--header h2 {
@@ -1143,9 +1143,17 @@ p {
 /**CountDown**/
 
 .countdown {
-  border: 2px solid var(--grey_clear);
   margin: 10%;
   padding-left: 5%;
+}
+
+.countdown h2 {
+  text-align: center;
+  padding-bottom: 5%;
+}
+
+#countdown__area {
+  border: 2px solid var(--grey_clear);
 }
 
 #countdown__area ul {
@@ -1212,7 +1220,18 @@ p {
   }
 }
 
+@media (min-width: 1024px) {
+  .countdown {
+    margin-bottom: 5%;
+  }
+}
+
 /**Map**/
+
+.map__area h2 {
+  text-align: center;
+  padding-bottom: 5%;
+}
 
 #map {
   height: 420px;
@@ -1246,7 +1265,7 @@ p {
 }
 
 .speed__area img {
-  max-width: 80%;
+  width: 300px;
   padding: 0% 10%;
 }
 
@@ -1259,6 +1278,8 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   background-color: var(--grey_clear);
   height: 30px;
+  width: 500px;
+  align-items: center;
 }
 
 .speed__area .speed__btn input:nth-child(1) {
@@ -1278,9 +1299,47 @@ p {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   padding-left: 2%;
-
 }
 
+
+@media (max-width: 360px) {
+  .speed__area img {
+    width: 238px;
+    margin-left: 18px;
+  }
+
+  .plans__area--btn {
+    padding-left: 10%;
+  }
+
+  .plans__area--btn {
+    padding-left: 0%;
+  }
+}
+
+@media (max-width: 280px) {
+  .speed__area img {
+    width: 200px;
+  }
+
+  .plans__area--btn {
+    margin-left: 12px;
+  }
+}
+
+@media (min-width: 540px) {
+  .speed__area img {
+    width: 400px;
+    padding: 0% 13%;
+  }
+}
+
+@media (min-width: 768px) {
+  .speed__area img {
+    width: 550px;
+    margin-left: 6%;
+  }
+}
 
 @media (min-width: 768px) {
   .speed__area h2 {
@@ -1292,7 +1351,6 @@ p {
   .speed__area p {
     font-size: 25px;
     margin-top: 0%;
-
   }
 
   .speed__area .speed__btn {
@@ -1324,12 +1382,21 @@ p {
   .speed__btn {
     margin-top: 20%
   }
+
+  .speed__input {
+    margin-right: 10%;
+    width: 1000px;
+  }
+
+  .speed__area img {
+    margin-right: 0px;
+    width: 420px
+  }
 }
 
 /*****************TEAM****************************/
 .team__area {
   max-width: 100%;
-  /*display: flex;*/
   overflow: auto;
 }
 
