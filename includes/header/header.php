@@ -25,25 +25,38 @@
     href="https://fonts.googleapis.com/css2? family = Oswald: wght @ 300; 500; 700 & family = Source + Sans + Pro: wght @ 300; 400; 700 & display = swap "
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/6cf2391fde.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
 
   <meta name="theme-color" content="#fafafa">
 </head>
+
 <body>
-  <div class="img__nav">
-    <img src="img/logo2.png" alt="">
+  <div class="nav__area">
+    <div class="img__nav">
+      <img src="img/logo2.png" alt="">
+    </div>
+    <div class="hamburger">
+      <div class="_layer -top"></div>
+      <div class="_layer -mid"></div>
+      <div class="_layer -bottom"></div>
+    </div>
+    <nav class="menuppal nav__btn">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="#" class="btn__orange">Contact</a></li>
+      </ul>
+    </nav>
+    <!--nav__btn-->
+    <nav class="nav__desktop nav__btn">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="#" class="btn__orange">Contact</a></li>
+      </ul>
+    </nav>
   </div>
-  <div class="hamburger">
-    <div class="_layer -top"></div>
-    <div class="_layer -mid"></div>
-    <div class="_layer -bottom"></div>
-  </div>
-  <nav class="menuppal nav__btn nav__mb">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="#" class="btn__orange">Contact</a></li>
-    </ul>
-  </nav>
-  <!--nav__btn-->

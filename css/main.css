@@ -1454,49 +1454,48 @@ p {
 
 /**Form**/
 
-.form__area{
+.form__area {
   width: 90%;
   margin: 5%;
   padding-bottom: 10%;
 }
+
 .form__area h2,
-.form__area p{
+.form__area p {
   text-align: center;
 }
 
-.form__area p{
+.form__area p {
   margin-bottom: 10%;
 }
 
 .form__area form label,
-.form__area form input{
+.form__area form input {
   width: 80%;
   display: block;
   margin-bottom: 10px;
   margin-left: 10%;
   font-size: 18px;
   font-family: 'Source Sans Pro', sans-serif;
- 
 }
 
-.form__area form label{
+.form__area form label {
   font-weight: 700;
 }
 
-.form__area form input{
-  border:solid 1px var(--btn_or);
+.form__area form input {
+  border: solid 1px var(--btn_or);
   padding: 5px;
   border-radius: 5px;
   color: var(--dark);
   font-size: 15px;
 }
 
-::placeholder{
+input:focus {
   background-color: var(--white);
- 
 }
 
-.form__area .btn__orange{
+.form__area .btn__orange {
   background-color: var(--btn_or);
   width: 60%;
   margin-left: 23%;
@@ -1532,6 +1531,22 @@ p {
     width: 35px;
     height: 32px;
     padding-top: 0.3rem;
+  }
+
+  .form__area form label,
+  .form__area form input,
+  .form__area .btn__orange {
+    max-width: 50%;
+  }
+
+  .form__area form label,
+  .form__area form input {
+    margin-left: 26%;
+  }
+
+  .form__area .btn__orange {
+    margin-left: 27%;
+    margin-top: 7%;
   }
 }
 
@@ -1570,6 +1585,22 @@ p {
   .team__icons i:hover {
     width: 23px;
     height: 20px;
+  }
+
+  .form__area p {
+    margin-bottom: 5%;
+  }
+
+  .form__area form label,
+  .form__area form input,
+  .form__area .btn__orange {
+    max-width: 25%;
+    margin-left: 37%;
+  }
+
+  .form__area .btn__orange {
+    margin-top: 5%;
+    margin-left: 37.5%;
   }
 }
 
