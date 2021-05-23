@@ -1452,6 +1452,57 @@ p {
   padding-top: 0.3rem;
 }
 
+/**Form**/
+
+.form__area{
+  width: 90%;
+  margin: 5%;
+  padding-bottom: 10%;
+}
+.form__area h2,
+.form__area p{
+  text-align: center;
+}
+
+.form__area p{
+  margin-bottom: 10%;
+}
+
+.form__area form label,
+.form__area form input{
+  width: 80%;
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  font-size: 18px;
+  font-family: 'Source Sans Pro', sans-serif;
+ 
+}
+
+.form__area form label{
+  font-weight: 700;
+}
+
+.form__area form input{
+  border:solid 1px var(--btn_or);
+  padding: 5px;
+  border-radius: 5px;
+  color: var(--dark);
+  font-size: 15px;
+}
+
+::placeholder{
+  background-color: var(--white);
+ 
+}
+
+.form__area .btn__orange{
+  background-color: var(--btn_or);
+  width: 60%;
+  margin-left: 23%;
+  margin-top: 10%;
+}
+
 @media (min-width: 768px) {
   .team__area p {
     font-size: 25px;
@@ -1521,6 +1572,7 @@ p {
     height: 20px;
   }
 }
+
 
 
 
