@@ -72,7 +72,7 @@
       <input type="text" id="surname" name="surname" placeholder="Surname..">
       <label for="mail">Mail</label>
       <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
-      <input class="btn__orange" type="button" name="checkin" value="send">
+      <input class="btn__orange" type="submit" name="checkin" value="send">
     </form>
 
   </section>
