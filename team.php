@@ -1,3 +1,15 @@
+<?php
+    $server = "localhost";
+    $user = "root";
+    $password = "";
+    $database = "form";
+
+    $connect = mysqli_connect($server, $user, $password, $database);
+
+      if(!$connect){
+        echo"Error in your connection server";
+      }
+  ?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -107,18 +119,19 @@
       <!--boxes-->
     </div>
   </section>
+
   <section class="form__area">
     <h2>Contact</h2>
     <p>
       Please contact us if you have questions or comments about this service.</p>
-    <form action="action_page.php" method="get">
+    <form action="action_page.php" name="form" method="POST">
       <label for="name">First name</label>
       <input type="text" id="name" name="name" placeholder="Name...">
       <label for="suname">Surname</label>
       <input type="text" id="surname" name="surname" placeholder="Surname..">
       <label for="mail">Mail</label>
-      <input type="email" id="mail" name="mail" placeholder="ejemplo@email.com">
-      <input class="btn__orange" type="button" value="Send">
+      <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+      <input class="btn__orange" type="button" name="checkin" value="send">
     </form>
 
   </section>
@@ -200,3 +213,24 @@
 </body>
 
 </html>
+<?php
+if(isset($_POST['checkin'])){
+  $id = $_POST["id"];
+  $name = $_POST["name"];
+  $surname = $_POST["surname"];
+  $email = $_POST["email"];
+
+  $insertData = "INSERT INTO datos VALUES(
+    '$id',
+    '$name',
+    '$surname', 
+    '$email')";
+
+    $runInsert = mysqli_query($connect, $insertData);
+
+    if(!$runInsert){
+      echo " Error in SQL query";
+    }
+}
+
+?>
