@@ -1,6 +1,21 @@
 (function () {
   "use strict";
 
+  //HAMBURER
+
+  // selector
+  var menu = document.querySelector('.hamburger');
+
+  // method
+  function toggleMenu(event) {
+    this.classList.toggle('is-active');
+    document.querySelector(".menuppal").classList.toggle("is_active");
+    event.preventDefault();
+  }
+
+  // event
+  menu.addEventListener('click', toggleMenu, false);
+
 
   document.addEventListener('DOMContentLoaded', function () {
     //Map
@@ -14,20 +29,6 @@
     L.marker([37.913533, -0.726247]).addTo(map)
       .bindPopup('SIWI Office')
       .openPopup()
-
-    // selector
-    var menu = document.querySelector('.hamburger');
-
-    // method
-    function toggleMenu(event) {
-      this.classList.toggle('is-active');
-      document.querySelector(".menuppal").classList.toggle("is_active");
-      event.preventDefault();
-    }
-
-    // event
-    menu.addEventListener('click', toggleMenu, false);
-
 
     //COUNTDOWN
 

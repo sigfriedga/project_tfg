@@ -40,23 +40,25 @@
       <div class="_layer -mid"></div>
       <div class="_layer -bottom"></div>
     </div>
-    <nav class="menuppal nav__btn">
+    <nav class="menuppal">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="services.php">Services</a></li>
         <li><a href="team.php">Team</a></li>
-        <li><a href="#" class="btn__orange">Contact</a></li>
+        <li><a href="team.php#contact" class="btn__orange">Contact</a></li>
       </ul>
     </nav>
     <!--nav__btn-->
     <nav class="nav__desktop nav__btn">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="about.php">About Us</a></li>
         <li><a href="services.php">Services</a></li>
         <li><a href="team.php">Team</a></li>
-        <li><a href="#" class="btn__orange">Contact</a></li>
+        <li><a href="team.php#contact" class="btn__orange">Contact</a></li>
       </ul>
     </nav>
   </div>
+  <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20de%20sus%20servicios%20para%20crear%20una%20Web."
+    class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>

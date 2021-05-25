@@ -4,7 +4,7 @@
     <h1>SEO &amp; Digital <span>Marketing</span> For Your Website.</h1>
     <p>Provide all Kind os seo services and help to improve seo ranking. Globally incubate standards.</p>
     <div class="header__btn">
-      <a class="btn__orange" href="services.html">Start Now</a>
+      <a class="btn__orange" href="team.php#contact">Start Now</a>
     </div>
     <!--header__btn-->
   </div>
@@ -71,7 +71,7 @@
       <h2>Keywords Research</h2>
       <p>Business applications through revolutionary catalysts for change the Seamlessly underwhelm dures.</p>
       <div class="choose__btn">
-        <a class="btn__orange" href="#">Learn More<i class="fas fa-chevron-right"></i></a>
+        <a class="btn__orange" href="services.php">Learn More<i class="fas fa-chevron-right"></i></a>
       </div>
     </div>
     <!--choose-->

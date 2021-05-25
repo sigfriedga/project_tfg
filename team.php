@@ -61,7 +61,7 @@
     </div>
   </section>
 
-  <section class="form__area">
+  <section class="form__area" id="contact">
     <h2>Contact</h2>
     <p>
       Please contact us if you have questions or comments about this service.</p>

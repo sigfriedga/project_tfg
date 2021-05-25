@@ -53,7 +53,7 @@
   </footer>
   <!--footer-->
   <div class="copy">
-    <p>&copy <span>Siwi</span> <?php date() ?>All Rights Reserved.</p>
+    <p>&copy <span>Siwi</span> <?php echo date('Y')?> All Rights Reserved.</p>
   </div>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
