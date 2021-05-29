@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>SIWI AGENCY</title>
-  <meta name="description" content="">
+  <meta name="description" content="SIWI is a develop and SEO company from Spain. We build awesome webpage!">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -61,4 +61,4 @@
     </nav>
   </div>
   <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20de%20sus%20servicios%20para%20crear%20una%20Web."
-    class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+    class="whatsapp" rel="noopener" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
