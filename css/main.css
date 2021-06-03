@@ -1611,6 +1611,47 @@ input:focus {
     margin-left: 37.5%;
   }
 }
+/*****************CONFIRMED****************************/
+
+.confirmed{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.confirmed__area{
+  margin: 50% 5%;
+}
+
+.confirmed__area img{
+  margin-left: 6%;
+  width: 90%;
+  margin-bottom: 5%;
+
+}
+
+.confirmed__area h1{
+  color: var(--btn_or);
+  font-size: 5rem;
+  margin-top: 0%;
+  text-align: center;
+}
+
+.confirmed__area p{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.confirmed__area a{
+  text-decoration: none;
+}
+
+.confirmed__area span{
+  margin: 20% 5% 0% 32%;
+}
+
 
 /* ==========================================================================
    Helper classes
