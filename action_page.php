@@ -1,10 +1,11 @@
-<?php include("includes/connect/bd.php"); 
+<?php 
 
-if(isset($_POST['checkin'])){
-  $name = $_POST["name"];
-  $surname = $_POST["surname"];
-  $email = $_POST["email"];
-
+include("includes/connect/bd.php"); 
+if(isset($_POST)){
+  $name = $_POST['name'];
+  $surname = $_POST['surname'];
+  $email = $_POST['email'];
+ 
   $insertData = "INSERT INTO contactform (`name`, `surname`, `email`) VALUES(
     '$name',
     '$surname', 
@@ -15,30 +16,7 @@ if(isset($_POST['checkin'])){
     if(!$runInsert){
       echo " Error in SQL query";
     }
-
-
-    if($_SERVER["REQUEST_METHOD"] == "POST"){
-      $email = $_POST["email"];
-
-      $searchemail = "SELECT email from contactform WHERE email='$email'";
-
-      //Realizamos la consulta y anadimos $connect, ya que es la variable que creamos en nuestro archivo db.php
-      $result = $connect->query($searchemail);
-
-      //Usaremos la funcion mysqli_num_rows en la consulta $result,
-      //esta funcion nos regresa el numero de filas en el resultado
-      $counter = mysqli_num_rows($result);
-
-      //SI SI EXISTE una fila, quiere decir QUE SI ESTA EL CORREO EN LA BASE DE DATOS
-      if($counter == 1) {
-         echo 'This Email already exist';
-      } 
- }
-
-
-    
 }
-
 ?>
 <link rel="stylesheet" href="css/main.css">
 <section class="confirmed">

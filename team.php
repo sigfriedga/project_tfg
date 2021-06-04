@@ -60,16 +60,12 @@
     <!--boxes-->
   </div>
 </section>
-<form action="success.html">
+<form action="success.php">
     <p>
         Your Email<br>
         <input name="email">
     </p>
-
     
-<script src="https://vivirenremoto.github.io/doomcaptcha/script.js?version=16" countdown="on" label="Captcha" enemies="4"></script>
-
-
     <p>
         <button>Unsubscribe</button>
     </p>
